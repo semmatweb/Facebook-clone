@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Log In or Sign Up</title>
+    <link rel="stylesheet" href="./src/bootstrap.css">
+    <link rel="stylesheet" href="./src/input.css">
+    <link rel="icon" href="./images/SeekPng.com_logo-facebook-png-transparente_516623.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="box">
+        <div class="title-box">
+            <h1>facebook</h1>
+          <!-- <img src="./images/facebook_logo.svg" alt="Facebook"> -->
+          <p>Facebook helps you connect and share with the people in your life.</p>
+        </div>
+        <div class="form-box form-control">
+          <form action="#">
+            <input type="email" class="form-control" placeholder="Email address or phone number" id="emails">
+            <span id="mail" class="text-danger" style="font-size: 12px;"></span>
+            <div class="password-container">
+                <input type="password" placeholder="Password" id="psw" class="form-control">
+                <i class="fa-solid fa-eye" id="eye"></i>
+                <span id="pass" class="text-danger font-weight-bold"></span>
+           </div>
+            <button class="btn-btn-primary w-100"  id="modalDoneBtn" data-dismiss="modal">Log In</button>
+            <p><a href="./forget.html">Forgotten Password?</a></p>
+          </form>
+          <hr>
+          <button class="buttonn" id="signup-account">Create New Account</button>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-contents">
+            <ol>
+                <li>English (UK)</li>
+                <li><a href="#">മലയാളം</a></li>
+                <li><a href="#">தமிழ்</a></li>
+                <li><a href="#">తెలుగు</a></li>
+                <li><a href="#">বাংলা</a></li>
+                <li><a href="#">اردو</a></li>
+                <li><a href="#">हिन्दी</a></li>
+                <li><a href="#">ಕನ್ನಡ</a></li>
+                <li><a href="#">Español</a></li>
+                <li><a href="#">Português (Brasil)</a></li>
+                <li><a href="#">Français (France)</a></li>
+                <li><button>+</button></li>
+            </ol>
+
+            <ol>
+                <li><a href="./index.html">Sign Up</a></li>
+                <li><a href="./index.html">Log In </a></li>
+                <li><a href="#">Messenger</a></li>
+                <li><a href="#">Facebook Lite</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Page categories</a></li>
+                <li><a href="#">Places</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">PayGroups</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Oculus</a></li>
+                <li><a href="#">Portal</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Local</a></li>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Log In </a></li>
+                <li><a href="#">Messenger</a></li>
+                <li><a href="#">Facebook Lite</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Page categories</a></li>
+                <li><a href="#">Places</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">PayGroups</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Oculus</a></li>
+                <li><a href="#">Portal</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Local</a></li>
+            </ol>
+            <small>Facebook © 2022</small>
+        </div>
+    </footer>      
+
+
+      <div class="modal" role="dialog">
+        <div class="modal-signup">
+            <div class="modal-close">
+                X
+            </div>
+            <div class="modal-signup-heading">
+                 
+                <p class="modal-signup-name">Sign Up</p>
+                
+                <p class="modal-signup-child-name">It's quick and easy.</p>
+                
+            </div>
+            <div class="modal-signup-name" id="modalInp">
+                       
+                <input type="text" placeholder="First name" id="first">
+                
+                <input type="text" placeholder="Surname" id="surrace">
+                           
+             </div>
+             <div class="modal-signup-email">
+                       
+                <input type="email" placeholder="Email address or phone number" id="emailfact" oninput="among()"><br>
+                <span id="emailfacts"></span>
+                       
+             </div>
+             <div class="modal-signup-password">
+                        
+                    <input type="password" placeholder="New password" id="psws" oninput="space()"><br>
+                    <span id="pswss"></span>
+             </div>
+             <div class="modal-gender">
+                 
+                <label for="">Gender</label>
+                
+                <div class="modal-gender-alert">
+                    
+                    <a >&#63;</a>
+                    
+                </div>
+                 
+             </div>
+             
+             <div class="modal-gender-choice">
+                
+                <div class="modal-gender-name">
+                    
+                    <label for="">Female</label>
+                    
+                    <input type="radio">
+                    
+                </div>
+                
+                <div class="modal-gender-name">
+                    
+                    <label for="">Male</label>
+                    
+                    <input type="radio">
+                    
+                </div>
+                
+                <div class="modal-gender-name">
+                    
+                    <label for="">Custom</label>
+                    
+                    <input type="radio">
+                    
+                </div>
+            </div>
+
+        
+              
+            <div class="modal-signup-terms">
+                
+                <p> By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy. You may receive SMS notifications from us and can opt out at any time.  
+                  </p>
+                  
+            </div>
+            
+            <div class="modal-signup-button">
+                
+                <button class="btn btn-success" onclick="register()" data-dismiss="modal">Sign Up</button>
+                
+            </div>
+            
+</body>
+<script src="script.js"></script>
+</html>
