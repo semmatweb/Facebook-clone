@@ -12,7 +12,6 @@ let emailf;
 let pswss;
 let formValid = true;
 let password; 
-
 //
 const modalInp = document.getElementById('modals')
 //
@@ -31,16 +30,6 @@ function login() {
     // saveitems.localStorage.setItem('pinDetails', JSON.stringify(details))
 }
 
-// function register() {
-//   if (modalInp.value !== ''){
-//     staticBackdrop.classList.remove('show','disp')
-//     document.querySelector('#modalB').hidden=true
-//     staticBackdrop.style.display='none'
-//     playerName.innerHTML = nameInp.value.toUpperCase()
-//     document.querySelector('.main').hidden=false
-//    } 
-// }
-
 function validate() {
     if (emailcheck.test(email)) {
         document.getElementById('mail').innerHTML = ``;
@@ -56,14 +45,7 @@ function validate() {
         }
       
 }
-// function search() {
-//   if (emailchecks.test(emailss)) {
-//     document.getElementById('mails').innerHTML = `Email Verification Link Has Been Sent !`;
-//   } else {
-//     document.getElementById('mails').innerHTML = `The email address or mobile number you entered isn't connected to an account. <a href="./forget.html">Find your account and log in</a>`;
-//     console.log(mails);
-//   }
-// }
+
 ////////////SIGN-tnUP MODAL////////////
 function register() {
   // names = document.getElementById('first');
@@ -77,11 +59,11 @@ function register() {
     psws.value
     let user ={fName:first.value, SName:surrace.value, Email:emailfact.value, PWord:psws.value}
     details.push(user)
-    localstorage.setItems("getItems", JSON.stringify(details))
+    localStorage.setItem("FormItem", JSON.stringify(details))
     window.location.href='./homepage.html'
   }
 }
-getFormItems = localstorage.getItems(details)
+// FormItems = localstorage.getItem(details)
 function among() {
   if (emailcheck.test(document.getElementById('emailfact').value)) {
     document.getElementById('emailfact').style.borderColor = 'green'
